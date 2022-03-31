@@ -1,0 +1,48 @@
+<html>
+<head><Script Language="JavaScript">
+
+function verifyData()
+{
+ a=0;  r="";
+ for(i=0;i<=4;i++)
+ {
+  if(document.forms[0].elements[i].value=="")
+  {
+  a=1;
+  r=r + ""+ document.forms[0].elements[i].name + ";";
+  }
+  else if (i>3)&&(a==0)
+  {
+  alert("All Textboxes are filled in-Thank You!");
+  }
+  }
+  
+  for(i=0;i<=4;i++)
+  {
+  if (documents.forms[0].elements[i].value=="")
+  {
+  alert ("Please fill in the following textbox / textboxes:-"+ r);
+  document.forms[0].elements[i].focus();
+  break;
+  }
+  }
+  }
+  
+  </script></head>
+  <body><form>
+  
+  First Name:<input name="Firstname" Type="Text" Size=20/>
+  Last Name:<input name="Lastname" Type="Text" Size=20/>
+  
+  <p>address:<input name="address" Type="Text" size=60/></p>
+    <p>pincode:<input name="pincode" Type="Text" size=6/></p>
+	
+	<input name="act onClick="verify data()" Type="button" Value="Verify"/>
+	</form></body>
+	
+	<script language="JavaScript">
+	document.forms[0].Firstname.focus();
+	
+	</script>
+	</html>
+  
